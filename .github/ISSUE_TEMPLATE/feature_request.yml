@@ -1,0 +1,51 @@
+name: "✨ Feature Request"
+description: Suggest an enhancement for Shelby.
+title: "[feat]: <short summary>"
+labels: ["type:feature", "status:needs-triage"]
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - SDK (JS/TS)
+        - Indexer
+        - CLI
+        - RPC
+        - Explorer
+        - Other / Unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to Solve
+      description: "What's the pain point or need?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: "If you have one: APIs, UX, examples."
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+
+  - type: input
+    id: impact
+    attributes:
+      label: Impact / Who Benefits
+      placeholder: "e.g., devs building Y; apps needing Z."
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Pre-checks
+      options:
+        - label: I've searched existing feature requests
+          required: true

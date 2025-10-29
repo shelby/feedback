@@ -1,0 +1,98 @@
+name: "🐛 Bug Report"
+description: File a bug for Shelby.
+title: "[bug]: <short summary>"
+labels: ["type:bug", "status:needs-triage"]
+assignees: ["affinity-matrix"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your report! Please fill out as much as you can. This helps us quickly investigate the issue.
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Affected product
+      options:
+        - SDK (JS/TS)
+        - Indexer
+        - CLI
+        - RPC
+        - Explorer
+        - Other / Unsure
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version / Commit / Build
+      placeholder: e.g. 1.2.3, commit abc123
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform / Environment
+      multiple: true
+      options:
+        - MacOS
+        - Windows
+        - Linux
+        - iOS
+        - Android
+        - Node
+        - Browser (Chrome)
+        - Browser (Safari)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to Reproduce
+      description: "Numbered steps + minimal sample if possible."
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior & Errors
+      description: "Paste stack traces or error messages if relevant."
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Screenshots
+      description: "Attach files or drag & drop screenshots."
+      render: bash
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (Optional)
+      placeholder: "Email, Discord or GitHub username"
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Pre-Checks
+      options:
+        - label: I've searched existing issues
+          required: true
+        - label: This is not a security vulnerability (see SECURITY.md)
+          required: true
