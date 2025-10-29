@@ -1,5 +1,5 @@
-name: "🐛 Bug Report"
-description: File a bug for Shelby.
+name: "Bug report"
+description: File a bug for Shelby
 title: "[bug]: <short summary>"
 labels: ["type:bug", "status:needs-triage"]
 assignees: ["affinity-matrix"]

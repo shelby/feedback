@@ -1,5 +1,5 @@
-name: "✨ Feature Request"
-description: Suggest an enhancement for Shelby.
+name: "Feature request"
+description: Suggest an enhancement for Shelby
 title: "[feat]: <short summary>"
 labels: ["type:feature", "status:needs-triage"]
 body:
