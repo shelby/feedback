@@ -11,8 +11,8 @@ We monitor the security inbox on business days and will acknowledge new reports 
 Once a report is validated, we will work with you to investigate, remediate, and coordinate disclosure. We may request additional information or a safe channel for sharing sensitive artifacts.
 
 ## Bug Bounty Status
-We do not currently run a public bug bounty or offer monetary rewards. We still appreciate responsible disclosures and will credit researchers when possible.
+We do not currently run a public bug bounty program or offer monetary rewards. We still appreciate responsible disclosures and will credit researchers when possible.
 
 ## Additional Information
-- Our current security.txt file lives at `https://shelby.xyz/security.txt`.
+- Our current security.txt file lives at: `https://shelby.xyz/security.txt`
 - For non-security issues (bugs, feature requests, questions), please continue to use the standard GitHub issue templates referenced in `README.md`.
